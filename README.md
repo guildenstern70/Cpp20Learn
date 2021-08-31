@@ -22,7 +22,7 @@ Make the project
     cd cmake    
     cmake --build .  
 
-You will find the executable in "/out" folder.
+You will find the executable in "/cmake/out" folder.
 
 ### Run
 
