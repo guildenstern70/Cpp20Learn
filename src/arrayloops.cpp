@@ -7,9 +7,12 @@
 
 #include <array>
 #include "arrayloops.h"
+#include "utilities.h"
 
 void arrayloops()
 {
+    printheader("          ARRAYs and LOOPs");
+
     const size_t size{6};
     uint height[size]{12, 34, 3, 45, 98, 23};
 
