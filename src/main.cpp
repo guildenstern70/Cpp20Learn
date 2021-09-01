@@ -5,11 +5,12 @@
 // See LICENSE
 //
 
-#include <iostream>
 #include "arrayloops.h"
+#include "pointersreferences.h"
 
 int main()
 {
     arrayloops();
+    pointerreferences();
     return 0;
 }

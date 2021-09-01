@@ -5,6 +5,7 @@
 // See LICENSE
 //
 
+#include <array>
 #include "arrayloops.h"
 
 void arrayloops()
@@ -35,7 +36,20 @@ void arrayloops()
     {
         std::cout << height[index++] << " ";
     }
+    std::cout << std::endl;
 
+    // Std::Array
+    std::array<uint, size> heightArray {12, 34, 3, 45};
 
+    // Range based
+    for (uint h: heightArray)
+    {
+        std::cout << h << " ";
+    }
+    std::cout << std::endl;
+
+    // Accessing single items
+    std::cout << "3rd item is " << height[2] << std::endl;
+    std::cout << "3rd item is " << heightArray.at(2) << std::endl;
 }
 
