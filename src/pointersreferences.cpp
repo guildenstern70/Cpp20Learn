@@ -44,9 +44,7 @@ void pointerreferences()
     // References
 
     long& numberreference { number };
-    std::cout << "Address of the number reference > " << uniquenumberptr.get() << std::endl;
     std::cout << "Content of the number reference > " << numberreference << std::endl;
-
 
 }
 
