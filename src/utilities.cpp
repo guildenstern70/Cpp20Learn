@@ -2,8 +2,7 @@
 // Created by Alessio Saltarin on 01/09/21.
 //
 
-#include <string>
-#include <iostream>
+#include "utilities.h"
 
 void printheader(const std::string& header)
 {
