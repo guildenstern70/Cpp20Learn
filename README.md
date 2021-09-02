@@ -17,7 +17,7 @@ Build CMake environment files in "./cmake" directory:
     cd cmake
     cmake ..  
 
-Make the project
+Make the project - you are building both the executable and the tests executable:
 
     cd cmake    
     cmake --build .  
@@ -27,6 +27,14 @@ You will find the executable in "/cmake/out" folder.
 ### Run
 
     ./cmake/out/Cpp20Learn
+
+### Tests
+
+Tests are implemented using [Doctest](https://github.com/onqtam/doctest). You may run them with:
+
+    ./cmake/out/Tests
+
+
 
 
 

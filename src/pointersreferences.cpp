@@ -9,18 +9,24 @@
 
 #define MAGIC_NUMBER 317138913L
 
-void pointerreferences()
+long normalpointers()
 {
-    printheader("      POINTERs and REFERENCEs ");
-
     long number { MAGIC_NUMBER };
     long* numberptr { &number };  // numberptr is the pointer to number
-                                  // & (address of) is the operator that produces the address of number
+    // & (address of) is the operator that produces the address of number
     long numberextractedfromptr = *numberptr;
-    
+
     std::cout << "Number > " << number << std::endl;
     std::cout << "Address of Number > " << &number << std::endl;
     std::cout << "Content of the pointer > " << numberextractedfromptr << std::endl;
+
+    return numberextractedfromptr;
+}
+
+void pointerreferences()
+{
+    printheader("      POINTERs and REFERENCEs ");
+    auto number = normalpointers();
 
     // ALERT:
     // You should never use "new" or "delete" - direct dynamic heap memory allocation - in Modern C++!

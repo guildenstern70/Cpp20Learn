@@ -21,4 +21,4 @@ add_executable(Tests
                src/pointersreferences.h
                src/utilities.cpp
                src/utilities.h
-               src/arrayloops_test.cpp)
+               src/all_tests.cpp)

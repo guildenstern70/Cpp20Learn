@@ -9,19 +9,37 @@
 #include "arrayloops.h"
 #include "utilities.h"
 
-int classicalloop()
+const size_t size{6};
+const uint height[size]{12, 34, 3, 45, 98, 23};
+
+//
+// Classical
+//
+uint classicalloop()
 {
-    const size_t size{6};
-    int sum = 0;
-    uint height[size]{12, 34, 3, 45, 98, 23};
+    uint sum = 0;
 
     // Classical for loop
     for (size_t index{}; index < size; ++index)
     {
         sum += height[index];
-        std::cout << height[index] << " ";
     }
     std::cout << std::endl;
+    return sum;
+}
+
+//
+// Range based
+//
+uint rangebasedloop()
+{
+    uint sum = 0;
+
+    for (uint h: height)
+    {
+        sum += h;
+    }
+
     return sum;
 }
 
@@ -30,16 +48,9 @@ void arrayloops()
     printheader("          ARRAYs and LOOPs");
 
     std::cout << "Classical loop sum = " << classicalloop() << std::endl;
+    std::cout << "Range based loop sum = " << rangebasedloop() << std::endl;
 
-    const size_t size{6};
-    uint height[size]{12, 34, 3, 45, 98, 23};
 
-    // Range based
-    for (uint h: height)
-    {
-        std::cout << h << " ";
-    }
-    std::cout << std::endl;
 
     // Size of an array
     const int heightLength = std::size(height);

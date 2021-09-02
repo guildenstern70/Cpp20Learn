@@ -11,7 +11,8 @@
 #include <iostream>
 
 using uint = unsigned int;
-int classicalloop();
+uint classicalloop();
+uint rangebasedloop();
 void arrayloops();
 
 #endif //CPP20LEARN_ARRAYLOOPS_H

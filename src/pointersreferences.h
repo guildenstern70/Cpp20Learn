@@ -12,5 +12,6 @@
 #include "utilities.h"
 
 void pointerreferences();
+long normalpointers();
 
 #endif //CPP20LEARN_POINTERSREFERENCES_H
