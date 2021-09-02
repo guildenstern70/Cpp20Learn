@@ -2,7 +2,7 @@
 
 A collection of simple source code examples in C++ 20, featuring key aspects of the language.
 
-## How to build
+## How to build and supported toolchains
 
 The source code is compatible with both GNU C++ v.10+ and CLang v.12+.
 
