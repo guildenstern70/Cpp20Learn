@@ -7,10 +7,12 @@
 
 #include "arrayloops.h"
 #include "pointersreferences.h"
+#include "functions.h"
 
 int main()
 {
     arrayloops();
     pointerreferences();
+    functions();
     return 0;
 }

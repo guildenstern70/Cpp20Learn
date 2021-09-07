@@ -12,7 +12,9 @@ add_executable(Cpp20Learn
                src/pointersreferences.cpp
                src/pointersreferences.h
                src/utilities.cpp
-               src/utilities.h)
+               src/utilities.h
+               src/functions.cpp
+               src/functions.h)
 
 add_executable(Tests
                src/arrayloops.cpp
@@ -21,4 +23,6 @@ add_executable(Tests
                src/pointersreferences.h
                src/utilities.cpp
                src/utilities.h
+               src/functions.cpp
+               src/functions.h
                src/all_tests.cpp)
