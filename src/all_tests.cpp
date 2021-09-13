@@ -1,5 +1,8 @@
 //
-// Created by Alessio Saltarin on 02/09/21.
+// C++ 20 Learn
+// Copyright (C) 2021, Alessio Saltarin
+//
+// See LICENSE
 //
 
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
@@ -8,6 +11,7 @@
 #include "arrayloops.h"
 #include "pointersreferences.h"
 #include "functions.h"
+#include "optional.h"
 
 TEST_CASE("Loops")
 {
@@ -38,6 +42,14 @@ TEST_CASE("Functions")
     SUBCASE("Default Parameters")
     {
         CHECK(hello() == "Hello world!");
+    }
+}
+
+TEST_CASE("Optional")
+{
+    SUBCASE("Output Parameters")
+    {
+        CHECK(findoccurrence("E FEDEL NON LEDE FE", "LEDE") == "LEDE");
     }
 }
 

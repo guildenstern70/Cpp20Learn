@@ -1,5 +1,8 @@
 //
-// Created by Alessio Saltarin on 01/09/21.
+// C++ 20 Learn
+// Copyright (C) 2021, Alessio Saltarin
+//
+// See LICENSE
 //
 
 #ifndef CPP20LEARN_UTILITIES_H

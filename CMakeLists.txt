@@ -14,7 +14,9 @@ add_executable(Cpp20Learn
                src/utilities.cpp
                src/utilities.h
                src/functions.cpp
-               src/functions.h)
+               src/functions.h
+               src/optional.cpp
+               src/optional.h)
 
 add_executable(Tests
                src/arrayloops.cpp
@@ -25,4 +27,6 @@ add_executable(Tests
                src/utilities.h
                src/functions.cpp
                src/functions.h
+               src/optional.cpp
+               src/optional.h
                src/all_tests.cpp)

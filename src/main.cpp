@@ -8,11 +8,13 @@
 #include "arrayloops.h"
 #include "pointersreferences.h"
 #include "functions.h"
+#include "optional.h"
 
 int main()
 {
     arrayloops();
     pointerreferences();
     functions();
+    optional();
     return 0;
 }
