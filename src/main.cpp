@@ -9,6 +9,7 @@
 #include "pointersreferences.h"
 #include "functions.h"
 #include "optional.h"
+#include "templates.h"
 
 int main()
 {
@@ -16,5 +17,6 @@ int main()
     pointerreferences();
     functions();
     optional();
+    whichislarger();
     return 0;
 }

@@ -12,6 +12,7 @@
 #include "pointersreferences.h"
 #include "functions.h"
 #include "optional.h"
+#include "templates.h"
 
 TEST_CASE("Loops")
 {
@@ -50,6 +51,14 @@ TEST_CASE("Optional")
     SUBCASE("Output Parameters")
     {
         CHECK(findoccurrence("E FEDEL NON LEDE FE", "LEDE") == "LEDE");
+    }
+}
+
+TEST_CASE("Templates")
+{
+    SUBCASE("Function template")
+    {
+        CHECK(tellmewhichislarger(37.0, 33.2) == 37.0);
     }
 }
 

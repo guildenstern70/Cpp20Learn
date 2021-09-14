@@ -9,7 +9,7 @@
 #include "utilities.h"
 
 // getstringlen is an output parameter. Note that it is a reference.
-void outputparameter(size_t& lenofstring, const std::string& inputstring)
+void outputparameter(size_t& lenofstring, const std::string_view inputstring)
 {
     lenofstring = inputstring.length();
 }

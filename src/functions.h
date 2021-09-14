@@ -11,6 +11,7 @@
 #include <string>
 #include <iostream>
 #include <cstddef>
+#include <string_view>
 
 size_t getstringlen();
 std::string hello(std::string message = "Hello");
