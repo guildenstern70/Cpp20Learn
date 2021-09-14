@@ -14,7 +14,7 @@
 #include <string_view>
 
 size_t getstringlen();
-std::string hello(std::string message = "Hello");
+std::string hello(const std::string& message = "Hello");
 void functions();
 
 #endif //CPP20LEARN_FUNCTIONS_H

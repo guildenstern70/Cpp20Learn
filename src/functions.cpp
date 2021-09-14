@@ -16,7 +16,7 @@ void outputparameter(size_t& lenofstring, const std::string_view inputstring)
 
 // message is a parameter with a default value
 // the default value is defined in the header file
-std::string hello(std::string message)
+std::string hello(const std::string& message)
 {
     return message + " world!";
 }
