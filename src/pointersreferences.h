@@ -9,6 +9,7 @@
 #define CPP20LEARN_POINTERSREFERENCES_H
 
 #include <iostream>
+#include <memory>
 #include "utilities.h"
 
 void pointerreferences();
