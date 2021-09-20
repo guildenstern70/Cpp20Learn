@@ -1,5 +1,8 @@
 //
-// Created by Alessio Saltarin on 20/09/21.
+// C++ 20 Learn
+// Copyright (C) 2021, Alessio Saltarin
+//
+// See LICENSE
 //
 
 #include "classes.h"
