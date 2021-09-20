@@ -12,7 +12,9 @@ class Box
 public:
 
     Box(double length, double width, double height);
-    double volume() const;
+
+    // nodiscard means that this return value SHOULD NOT be ignored
+    [[nodiscard]] double volume() const;
 
 private:
     double length { 1.0 };
