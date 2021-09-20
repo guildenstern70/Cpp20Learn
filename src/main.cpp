@@ -10,6 +10,7 @@
 #include "functions.h"
 #include "optional.h"
 #include "templates.h"
+#include "classes.h"
 
 int main()
 {
@@ -18,5 +19,6 @@ int main()
     functions();
     optional();
     whichislarger();
+    testbox();
     return 0;
 }

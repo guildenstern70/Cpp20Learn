@@ -13,6 +13,7 @@
 #include "functions.h"
 #include "optional.h"
 #include "templates.h"
+#include "classes.h"
 
 TEST_CASE("Loops")
 {
@@ -59,6 +60,14 @@ TEST_CASE("Templates")
     SUBCASE("Function template")
     {
         CHECK(tellmewhichislarger(37.0, 33.2) == 37.0);
+    }
+}
+
+TEST_CASE("Classes")
+{
+    SUBCASE("Box volume")
+    {
+        CHECK(boxvolume(12.0, 21.3, 13.4) == 3425.04);
     }
 }
 

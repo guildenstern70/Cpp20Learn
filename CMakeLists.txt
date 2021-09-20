@@ -25,7 +25,7 @@ add_library(Cpp20LearnLib STATIC
             src/optional.cpp
             src/optional.h
             src/templates.cpp
-            src/templates.h)
+            src/templates.h src/classes.cpp src/classes.h)
 
 find_library(Cpp20LearnLib lib)
 target_link_libraries(Cpp20Learn LINK_PUBLIC Cpp20LearnLib)
