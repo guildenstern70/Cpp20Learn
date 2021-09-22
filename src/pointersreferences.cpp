@@ -35,7 +35,7 @@ void pointerreferences()
     // Unique Pointer: only ONE pointer to the same address
     std::unique_ptr<long> uniquenumberptr { std::make_unique<long>(MAGIC_NUMBER) };
     // Better:
-    // auto uniquenumberptr { std::make_unique<long>(317138913L) };
+    // auto uniquenumberptr { std::make_unique<long>(MAGIC_NUMBER) };
     long numberextractedfromuniqueptr = *uniquenumberptr;
 
     std::cout << "Address of the unique smart pointer > " << uniquenumberptr.get() << std::endl;

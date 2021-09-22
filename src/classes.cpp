@@ -5,6 +5,7 @@
 // See LICENSE
 //
 
+#include <memory>
 #include "classes.h"
 #include "utilities.h"
 
@@ -29,5 +30,10 @@ void testbox()
 double boxvolume(double length, double width, double height)
 {
     Box abox { length, width, height };
-    return abox.volume();
+    auto boxptr { std::make_unique<Box>(length, width, height) };
+    if (abox.volume() == boxptr->volume())
+    {
+        return abox.volume();
+    }
+    return -1;
 }
