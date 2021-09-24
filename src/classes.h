@@ -9,6 +9,7 @@
 #define CPP20LEARN_CLASSES_H
 
 #include <iostream>
+#include <memory>
 
 class Box
 {
