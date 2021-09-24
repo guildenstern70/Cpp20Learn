@@ -33,7 +33,7 @@ double boxvolume(double length, double width, double height)
     return abox.volume();
 }
 
-double boxvolume(Box box)
+double boxvolume(const Box& box)
 {
     return box.volume();
 }

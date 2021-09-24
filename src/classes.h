@@ -67,7 +67,7 @@ private:
 };
 
 void testbox();
-double boxvolume(Box box);
+double boxvolume(const Box& box);
 double boxvolume(double length, double width, double height);
 
 
