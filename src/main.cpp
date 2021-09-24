@@ -2,7 +2,8 @@
 // C++ 20 Learn
 // Copyright (C) 2021, Alessio Saltarin
 //
-// See LICENSE
+// This software is licensed under MIT license.
+// See LICENSE.
 //
 
 #include "arrayloops.h"

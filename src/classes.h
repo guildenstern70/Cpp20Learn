@@ -2,7 +2,8 @@
 // C++ 20 Learn
 // Copyright (C) 2021, Alessio Saltarin
 //
-// See LICENSE
+// This software is licensed under MIT license.
+// See LICENSE.
 //
 
 #ifndef CPP20LEARN_CLASSES_H
@@ -47,7 +48,7 @@ public:
     [[nodiscard]] double volume() const;
 
     // Getters
-    // Const keyword means that this method do not change the object state.
+    // Const keyword means that this method does not change the object state.
     // This is 'const correctness'
     [[nodiscard]] double getLength() const { return this->length; }
     [[nodiscard]] double getWidth() const { return this->width; }
