@@ -44,6 +44,12 @@ public:
         this->width = 1;
     }
 
+    //
+    // Static member function.
+    // In this case it provides a factory method
+    //
+    static std::shared_ptr<Box> createBox(double length, double width, double height);
+
     // nodiscard means that this return value SHOULD NOT be ignored
     [[nodiscard]] double volume() const;
 

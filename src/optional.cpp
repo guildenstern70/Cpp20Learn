@@ -28,12 +28,12 @@ void optional()
 {
     printheader("      OPTIONAL AND STRING_VIEW ");
     auto found = findoccurrence("E FEDEL NON LEDE FE", "LEDE");
-    if (!found.has_value())
+    if (found.has_value())
     {
-        std::cout << "Cannot find 'LEDE' in 'E FEDEL NON LEDE FE'" << std:: endl;
+        std::cout << "Found " << found.value() << " in 'E FEDEL NON LEDE FE'" << std:: endl;
     }
     else
     {
-        std::cout << "Found " << found.value() << " in 'E FEDEL NON LEDE FE'" << std:: endl;
+        std::cout << "Cannot find 'LEDE' in 'E FEDEL NON LEDE FE'" << std:: endl;
     }
 }

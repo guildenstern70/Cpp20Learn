@@ -14,6 +14,11 @@ double Box::volume() const
     return this->width * this->height * this->length;
 }
 
+std::shared_ptr<Box> Box::createBox(double length, double width, double height)
+{
+    return std::make_shared<Box>(length, width, height);
+}
+
 void testbox()
 {
     printheader("      CLASSES ");
@@ -29,8 +34,8 @@ void testbox()
 
 double boxvolume(double length, double width, double height)
 {
-    Box abox { length, width, height };
-    return abox.volume();
+    auto abox = Box::createBox(length, width, height);
+    return abox->volume();
 }
 
 double boxvolume(const Box& box)

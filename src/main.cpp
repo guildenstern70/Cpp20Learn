@@ -12,6 +12,7 @@
 #include "optional.h"
 #include "templates.h"
 #include "classes.h"
+#include "inheritance.h"
 
 int main()
 {
@@ -21,5 +22,6 @@ int main()
     optional();
     whichislarger();
     testbox();
+    testcolorcard();
     return 0;
 }
