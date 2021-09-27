@@ -6,10 +6,6 @@
 // See LICENSE.
 //
 
-//
-// Created by Alessio Saltarin on 27/09/21.
-//
-
 #ifndef CPP20LEARN_INHERITANCE_H
 #define CPP20LEARN_INHERITANCE_H
 
@@ -21,7 +17,9 @@ enum Color {
     Blue,
     Green };
 
-
+//
+// Base class
+//
 class Card
 {
 public:
@@ -36,6 +34,9 @@ protected:
     double height { 1.0 };
 };
 
+//
+// Class inherited from Card
+//
 class ColorCard : public Card
 {
 public:

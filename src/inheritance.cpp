@@ -6,10 +6,6 @@
 // See LICENSE.
 //
 
-//
-// Created by Alessio Saltarin on 27/09/21.
-//
-
 #include "inheritance.h"
 #include "utilities.h"
 
