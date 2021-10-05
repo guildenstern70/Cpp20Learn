@@ -13,6 +13,7 @@
 #include "templates.h"
 #include "classes.h"
 #include "inheritance.h"
+#include "polymorphism.h"
 
 int main()
 {
@@ -23,5 +24,6 @@ int main()
     whichislarger();
     testbox();
     testcolorcard();
+    polymorphism();
     return 0;
 }

@@ -16,6 +16,7 @@
 #include "templates.h"
 #include "classes.h"
 #include "inheritance.h"
+#include "polymorphism.h"
 
 TEST_CASE("Loops")
 {
@@ -80,6 +81,14 @@ TEST_CASE("Classes")
     SUBCASE("Inheritance")
     {
         CHECK(testcolorcard() == 21.0);
+    }
+    SUBCASE("Polymorphism")
+    {
+        auto aSquare = Square { 6.0 };
+        auto aCircle = Circle { 5.6 };
+        CHECK(aSquare.getArea() == 36.0);
+        CHECK(aCircle.getArea() > 98);
+        CHECK(polymorphism() > 134.5);
     }
 }
 
