@@ -71,6 +71,12 @@ TEST_CASE("Classes")
     {
         CHECK(boxvolume(12.0, 21.3, 13.4) == 3425.04);
     }
+    SUBCASE("Operator overloading")
+    {
+        auto abox = Box::createBox(10, 10, 10);
+        auto bbox = Box::createBox(12, 12, 12);
+        CHECK(abox < bbox);
+    }
     SUBCASE("Inheritance")
     {
         CHECK(testcolorcard() == 21.0);

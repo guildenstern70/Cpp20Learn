@@ -14,6 +14,11 @@ double Box::volume() const
     return this->width * this->height * this->length;
 }
 
+bool Box::operator<(const Box &aBox) const
+{
+    return (this->width < aBox.width);
+}
+
 std::shared_ptr<Box> Box::createBox(double length, double width, double height)
 {
     return std::make_shared<Box>(length, width, height);

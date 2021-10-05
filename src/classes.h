@@ -44,6 +44,9 @@ public:
         this->width = 1;
     }
 
+    // Operator overloading
+    bool operator<(const Box&  aBox) const;
+
     //
     // Static member function.
     // In this case it provides a factory method
