@@ -17,6 +17,7 @@
 #include "classes.h"
 #include "inheritance.h"
 #include "polymorphism.h"
+#include "containers.h"
 
 TEST_CASE("Loops")
 {
@@ -66,6 +67,18 @@ TEST_CASE("Templates")
     }
 }
 
+TEST_CASE("Containers")
+{
+    SUBCASE("Vector (stack)")
+    {
+        CHECK(createstackvector() == 8.74);
+    }
+    SUBCASE("Deque (heap)")
+    {
+        CHECK(createheapdeque() == 7.92);
+    }
+}
+
 TEST_CASE("Classes")
 {
     SUBCASE("Box volume")
@@ -91,5 +104,3 @@ TEST_CASE("Classes")
         CHECK(polymorphism() > 134.5);
     }
 }
-
-

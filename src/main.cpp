@@ -14,6 +14,7 @@
 #include "classes.h"
 #include "inheritance.h"
 #include "polymorphism.h"
+#include "containers.h"
 
 int main()
 {
@@ -25,5 +26,6 @@ int main()
     testbox();
     testcolorcard();
     polymorphism();
+    createstackvector();
     return 0;
 }

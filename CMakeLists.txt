@@ -31,7 +31,9 @@ add_library(Cpp20LearnLib STATIC
             src/inheritance.cpp
             src/inheritance.h
             src/polymorphism.cpp
-            src/polymorphism.h)
+            src/polymorphism.h
+            src/containers.cpp
+            src/containers.h)
 
 find_library(Cpp20LearnLib lib)
 target_link_libraries(Cpp20Learn LINK_PUBLIC Cpp20LearnLib)

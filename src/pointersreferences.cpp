@@ -49,7 +49,6 @@ void pointerreferences()
     std::cout << "Content of the shared smart pointer > " << numberextractedfromsharedptr << std::endl;
 
     // References
-
     long& numberreference { number };
     std::cout << "Content of the number reference > " << numberreference << std::endl;
 

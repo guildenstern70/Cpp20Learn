@@ -51,8 +51,6 @@ void arrayloops()
     std::cout << "Classical loop sum = " << classicalloop() << std::endl;
     std::cout << "Range based loop sum = " << rangebasedloop() << std::endl;
 
-
-
     // Size of an array
     const int heightLength = std::size(height);
 
