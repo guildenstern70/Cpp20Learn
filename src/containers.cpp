@@ -10,6 +10,7 @@
 #include "utilities.h"
 #include <utility>
 #include <vector>
+#include <memory>
 #include <deque>
 #include <iostream>
 
