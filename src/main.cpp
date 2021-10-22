@@ -15,6 +15,7 @@
 #include "inheritance.h"
 #include "polymorphism.h"
 #include "containers.h"
+#include "random.h"
 
 int main()
 {
@@ -27,5 +28,6 @@ int main()
     testcolorcard();
     polymorphism();
     createstackvector();
+    testrandom();
     return 0;
 }

@@ -33,7 +33,10 @@ add_library(Cpp20LearnLib STATIC
             src/polymorphism.cpp
             src/polymorphism.h
             src/containers.cpp
-            src/containers.h src/enums.h)
+            src/containers.h
+            src/enums.h
+            src/random.cpp
+            src/random.h)
 
 find_library(Cpp20LearnLib lib)
 target_link_libraries(Cpp20Learn LINK_PUBLIC Cpp20LearnLib)
