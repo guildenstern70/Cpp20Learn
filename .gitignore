@@ -3,5 +3,7 @@
 .vs/
 cmake/
 out/
+cmake-build*
+
 
 
