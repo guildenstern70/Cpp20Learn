@@ -12,7 +12,7 @@ The source code is compatible with both GNU C++ v.10+ and Clang v.12+.
 
 It has been compiled and tested with the following compilers/platforms:
 
-  - Apple Clang v12.0 (MacOS BigSur)
+  - Apple Clang v12.0/v14.x (MacOS BigSur, Ventura)
   - GNU C++ v.11.2 (MacOS BigSur)
   - MSVC Visual C++ v.16.10 (Win64 with Visual Studio 2019)
   - GNU C++ v.10.3.0 (Ubuntu 21.04)

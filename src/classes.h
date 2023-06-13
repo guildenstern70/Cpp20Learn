@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021, Alessio Saltarin
+// Copyright (C) 2021-23, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
@@ -19,7 +19,7 @@ public:
     Box() = default;
 
     // Constructor with member initializer list
-    // This is preferrable to initialize members
+    // This is preferable to initialize members
     // in function's body.
     Box(double length, double width, double height) :
             length { length }, width { width }, height { height } {};
@@ -36,7 +36,7 @@ public:
 
     // Constructor with a single parameter
     // can be called for implicit conversions. To prevent this
-    // use 'explicit' keywork
+    // use 'explicit' keyword
     explicit Box(double length) :
         length { length }
     {

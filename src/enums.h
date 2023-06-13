@@ -1,5 +1,9 @@
 //
-// Created by aless on 22/10/2021.
+// C++ 20 Learn
+// Copyright (C) 2021-23, Alessio Saltarin
+//
+// This software is licensed under MIT license.
+// See LICENSE.
 //
 
 #ifndef CPP20LEARN_ENUMS_H
