@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021-23, Alessio Saltarin
+// Copyright (C) 2021-25, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
@@ -9,7 +9,6 @@
 #ifndef CPP20LEARN_CLASSES_H
 #define CPP20LEARN_CLASSES_H
 
-#include <iostream>
 #include <memory>
 
 class Box
@@ -76,8 +75,8 @@ private:
 };
 
 void testbox();
-double boxvolume(const Box& box);
-double boxvolume(double length, double width, double height);
+double box_volume(const Box& box);
+double box_volume(double length, double width, double height);
 
 
 #endif //CPP20LEARN_CLASSES_H

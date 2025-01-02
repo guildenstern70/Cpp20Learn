@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021-23, Alessio Saltarin
+// Copyright (C) 2021-25, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
@@ -18,14 +18,14 @@ class Shape
 public:
     Shape() = default;
     virtual ~Shape() = default;
-    [[nodiscard]] virtual double getArea() const = 0;
+    [[nodiscard]] virtual double get_area() const = 0;
 };
 
 class Square : public Shape
 {
 public:
     explicit Square(double side): Shape(), side { side } {};
-    [[nodiscard]] double getArea() const override;
+    [[nodiscard]] double get_area() const override;
 
 private:
     double side;
@@ -35,14 +35,14 @@ class Circle : public Shape
 {
 public:
     explicit Circle(double radius): Shape(), radius { radius } {};
-    [[nodiscard]] double getArea() const override;
+    [[nodiscard]] double get_area() const override;
 
 private:
     double radius;
 };
 
 // This is a polymorphic method
-double areacomputer(const Shape& shape);
+double area_computer(const Shape& shape);
 
 double polymorphism();
 

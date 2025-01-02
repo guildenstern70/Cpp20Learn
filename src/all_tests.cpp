@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021-23, Alessio Saltarin
+// Copyright (C) 2021-25, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
@@ -23,11 +23,11 @@ TEST_CASE("Loops")
 {
     SUBCASE("Classical")
     {
-        CHECK(classicalloop() == 215);
+        CHECK(classical_loop() == 215);
     }
     SUBCASE("Range Based")
     {
-        CHECK(rangebasedloop() == 215);
+        CHECK(range_based_loop() == 215);
     }
 }
 
@@ -35,7 +35,7 @@ TEST_CASE("Pointers")
 {
     SUBCASE("Normal")
     {
-        CHECK(normalpointers() == 317138913L);
+        CHECK(normal_pointers() == 317138913L);
     }
 }
 
@@ -43,7 +43,7 @@ TEST_CASE("Functions")
 {
     SUBCASE("Output Parameters")
     {
-        CHECK(getstringlen() == 16);
+        CHECK(get_string_len() == 16);
     }
     SUBCASE("Default Parameters")
     {
@@ -55,7 +55,7 @@ TEST_CASE("Optional")
 {
     SUBCASE("Output Parameters")
     {
-        CHECK(findoccurrence("E FEDEL NON LEDE FE", "LEDE") == "LEDE");
+        CHECK(find_occurrence("E FEDEL NON LEDE FE", "LEDE") == "LEDE");
     }
 }
 
@@ -63,7 +63,7 @@ TEST_CASE("Templates")
 {
     SUBCASE("Function template")
     {
-        CHECK(tellmewhichislarger(37.0, 33.2) == 37.0);
+        CHECK(tell_me_which_is_larger(37.0, 33.2) == 37.0);
     }
 }
 
@@ -71,11 +71,11 @@ TEST_CASE("Containers")
 {
     SUBCASE("Vector (stack)")
     {
-        CHECK(createstackvector() == 8.74);
+        CHECK(create_stack_vector() == 8.74);
     }
     SUBCASE("Deque (heap)")
     {
-        CHECK(createheapdeque() == 7.92);
+        CHECK(create_heap_deque() == 7.92);
     }
 }
 
@@ -83,7 +83,7 @@ TEST_CASE("Classes")
 {
     SUBCASE("Box volume")
     {
-        CHECK(boxvolume(12.0, 21.3, 13.4) == 3425.04);
+        CHECK(box_volume(12.0, 21.3, 13.4) == 3425.04);
     }
     SUBCASE("Operator overloading")
     {
@@ -93,14 +93,14 @@ TEST_CASE("Classes")
     }
     SUBCASE("Inheritance")
     {
-        CHECK(testcolorcard() == 21.0);
+        CHECK(test_color_card() == 21.0);
     }
     SUBCASE("Polymorphism")
     {
         auto aSquare = Square { 6.0 };
         auto aCircle = Circle { 5.6 };
-        CHECK(aSquare.getArea() == 36.0);
-        CHECK(aCircle.getArea() > 98);
+        CHECK(aSquare.get_area() == 36.0);
+        CHECK(aCircle.get_area() > 98);
         CHECK(polymorphism() > 134.5);
     }
 }

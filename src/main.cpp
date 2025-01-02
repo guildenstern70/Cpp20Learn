@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021-23, Alessio Saltarin
+// Copyright (C) 2021-25, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
@@ -19,15 +19,15 @@
 
 int main()
 {
-    arrayloops();
-    pointerreferences();
+    array_loops();
+    pointer_references();
     functions();
     optional();
-    whichislarger();
+    which_is_larger();
     testbox();
-    testcolorcard();
+    test_color_card();
     polymorphism();
-    createstackvector();
-    testrandom();
+    create_stack_vector();
+    test_random();
     return 0;
 }

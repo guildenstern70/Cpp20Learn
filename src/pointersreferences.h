@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021-23, Alessio Saltarin
+// Copyright (C) 2021-25, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
@@ -13,7 +13,7 @@
 #include <memory>
 #include "utilities.h"
 
-void pointerreferences();
-long normalpointers();
+void pointer_references();
+long normal_pointers();
 
 #endif //CPP20LEARN_POINTERSREFERENCES_H

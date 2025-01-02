@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021-23, Alessio Saltarin
+// Copyright (C) 2021-25, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
@@ -23,12 +23,12 @@ std::ostream& operator<<(std::ostream& os, Color c)
 }
 
 
-double testcolorcard()
+double test_color_card()
 {
-    printheader("      INHERITANCE ");
-    auto colorcard = ColorCard { 10.0, 11.0, Color::Green };
-    double w = colorcard.getWidth();
-    double h = colorcard.getHeight();
-    std::cout << colorcard.getColor() << " color card [w=" << w << ", h=" << h << "]" << std::endl;
+    print_header("      INHERITANCE ");
+    const auto color_card = ColorCard { 10.0, 11.0, Color::Green };
+    const double w = color_card.getWidth();
+    const double h = color_card.getHeight();
+    std::cout << color_card.getColor() << " color card [w=" << w << ", h=" << h << "]" << std::endl;
     return (w+h);
 }

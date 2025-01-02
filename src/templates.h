@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021-23, Alessio Saltarin
+// Copyright (C) 2021-25, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
@@ -11,8 +11,8 @@
 
 #include <iostream>
 
-template<typename T> T getlargerbetween(T a, T b);
-double tellmewhichislarger(double a, double  b);
-void whichislarger();
+template<typename T> T get_larger_between(T a, T b);
+double tell_me_which_is_larger(double a, double  b);
+void which_is_larger();
 
 #endif //CPP20LEARN_TEMPLATES_H

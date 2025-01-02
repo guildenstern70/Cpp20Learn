@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021-23, Alessio Saltarin
+// Copyright (C) 2021-25, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
@@ -9,17 +9,17 @@
 #include "templates.h"
 
 template<typename T>
-T  getlargerbetween(T a, T b)
+T  get_larger_between(T a, T b)
 {
     return a > b ? a : b;
 }
 
-double tellmewhichislarger(double a, double  b)
+double tell_me_which_is_larger(double a, double  b)
 {
-    return getlargerbetween(a, b);
+    return get_larger_between(a, b);
 }
 
-void whichislarger()
+void which_is_larger()
 {
-    std::cout << "The larger between 45.0 and 67.9 is " << tellmewhichislarger(45.0, 67.9)  << std::endl;
+    std::cout << "The larger between 45.0 and 67.9 is " << tell_me_which_is_larger(45.0, 67.9)  << std::endl;
 }

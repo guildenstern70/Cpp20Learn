@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021-23, Alessio Saltarin
+// Copyright (C) 2021-25, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
@@ -10,47 +10,47 @@
 
 #define MAGIC_NUMBER 317138913L
 
-long normalpointers()
+long normal_pointers()
 {
-    long number { MAGIC_NUMBER };
-    long* numberptr { &number };  // numberptr is the pointer to number
+    constexpr long number { MAGIC_NUMBER };
+    const long* number_ptr { &number };  // number_ptr is the pointer to number
     // & (address of) is the operator that produces the address of number
-    long numberextractedfromptr = *numberptr;
+    const long number_extracted_from_ptr = *number_ptr;
 
     std::cout << "Number > " << number << std::endl;
     std::cout << "Address of Number > " << &number << std::endl;
-    std::cout << "Content of the pointer > " << numberextractedfromptr << std::endl;
+    std::cout << "Content of the pointer > " << number_extracted_from_ptr << std::endl;
 
-    return numberextractedfromptr;
+    return number_extracted_from_ptr;
 }
 
-void pointerreferences()
+void pointer_references()
 {
-    printheader("      POINTERs and REFERENCEs ");
-    auto number = normalpointers();
+    print_header("      POINTERs and REFERENCEs ");
+    const auto number = normal_pointers();
 
     // ALERT:
     // You should never use "new" or "delete" - direct dynamic heap memory allocation - in Modern C++!
     // Use Smart Pointers:
 
     // Unique Pointer: only ONE pointer to the same address
-    std::unique_ptr<long> uniquenumberptr { std::make_unique<long>(MAGIC_NUMBER) };
+    const auto unique_ptr { std::make_unique<long>(MAGIC_NUMBER) };
     // Better:
-    // auto uniquenumberptr { std::make_unique<long>(MAGIC_NUMBER) };
-    long numberextractedfromuniqueptr = *uniquenumberptr;
+    // auto unique_ptr { std::make_unique<long>(MAGIC_NUMBER) };
+    const long extracted = *unique_ptr;
 
-    std::cout << "Address of the unique smart pointer > " << uniquenumberptr.get() << std::endl;
-    std::cout << "Content of the unique smart pointer > " << numberextractedfromuniqueptr << std::endl;
+    std::cout << "Address of the unique smart pointer > " << unique_ptr.get() << std::endl;
+    std::cout << "Content of the unique smart pointer > " << extracted << std::endl;
 
     // Shared Pointer: many pointers to the same address. It comes with a reference count
-    auto sharednumberptr {std::make_shared<long>(MAGIC_NUMBER)};
-    long numberextractedfromsharedptr = *sharednumberptr;
-    std::cout << "Address of the shared smart pointer > " << sharednumberptr.get() << std::endl;
-    std::cout << "Content of the shared smart pointer > " << numberextractedfromsharedptr << std::endl;
+    const auto shared_ptr {std::make_shared<long>(MAGIC_NUMBER)};
+    const long number_extracted = *shared_ptr;
+    std::cout << "Address of the shared smart pointer > " << shared_ptr.get() << std::endl;
+    std::cout << "Content of the shared smart pointer > " << number_extracted << std::endl;
 
     // References
-    long& numberreference { number };
-    std::cout << "Content of the number reference > " << numberreference << std::endl;
+    const long& number_reference { number };
+    std::cout << "Content of the number reference > " << number_reference << std::endl;
 
 }
 

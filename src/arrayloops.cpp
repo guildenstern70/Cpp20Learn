@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021-23, Alessio Saltarin
+// Copyright (C) 2021-25, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
@@ -10,13 +10,13 @@
 #include "arrayloops.h"
 #include "utilities.h"
 
-const size_t size{6};
-const uint height[size]{12, 34, 3, 45, 98, 23};
+constexpr size_t size{6};
+constexpr uint height[size]{12, 34, 3, 45, 98, 23};
 
 //
 // Classical
 //
-uint classicalloop()
+uint classical_loop()
 {
     uint sum = 0;
 
@@ -32,7 +32,7 @@ uint classicalloop()
 //
 // Range based
 //
-uint rangebasedloop()
+uint range_based_loop()
 {
     uint sum = 0;
 
@@ -44,29 +44,29 @@ uint rangebasedloop()
     return sum;
 }
 
-void arrayloops()
+void array_loops()
 {
-    printheader("          ARRAYs and LOOPs");
+    print_header("          ARRAYs and LOOPs");
 
-    std::cout << "Classical loop sum = " << classicalloop() << std::endl;
-    std::cout << "Range based loop sum = " << rangebasedloop() << std::endl;
+    std::cout << "Classical loop sum = " << classical_loop() << std::endl;
+    std::cout << "Range based loop sum = " << range_based_loop() << std::endl;
 
     // Size of an array
-    const int heightLength = std::size(height);
+    constexpr int height_length = std::size(height);
 
     // While
     size_t index {0};
-    while (index < heightLength)
+    while (index < height_length)
     {
         std::cout << height[index++] << " ";
     }
     std::cout << std::endl;
 
     // Std::Array
-    std::array<uint, size> heightArray {12, 34, 3, 45};
+    constexpr std::array<uint, size> height_arr {12, 34, 3, 45};
 
     // Range based
-    for (uint h: heightArray)
+    for (const uint h: height_arr)
     {
         std::cout << h << " ";
     }
@@ -74,6 +74,6 @@ void arrayloops()
 
     // Accessing single items
     std::cout << "3rd item is " << height[2] << std::endl;
-    std::cout << "3rd item is " << heightArray.at(2) << std::endl;
+    std::cout << "3rd item is " << height_arr.at(2) << std::endl;
 }
 

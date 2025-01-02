@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021-23, Alessio Saltarin
+// Copyright (C) 2021-25, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
@@ -53,7 +53,7 @@ private:
 };
 
 
-double testcolorcard();
+double test_color_card();
 
 
 #endif //CPP20LEARN_INHERITANCE_H
