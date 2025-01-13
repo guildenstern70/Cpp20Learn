@@ -10,9 +10,7 @@
 #define CPP20LEARN_OPTIONAL_H
 
 #include <string_view>
-#include <string>
 #include <optional>
-#include <iostream>
 
 using ulong = unsigned long;
 

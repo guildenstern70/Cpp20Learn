@@ -6,7 +6,10 @@
 // See LICENSE.
 //
 
+#include <iostream>
 #include "pointersreferences.h"
+
+#include "utilities.h"
 
 #define MAGIC_NUMBER 317138913L
 

@@ -21,7 +21,7 @@ public:
     [[nodiscard]] virtual double get_area() const = 0;
 };
 
-class Square : public Shape
+class Square final : public Shape
 {
 public:
     explicit Square(double side): Shape(), side { side } {};
@@ -31,7 +31,7 @@ private:
     double side;
 };
 
-class Circle : public Shape
+class Circle final : public Shape
 {
 public:
     explicit Circle(double radius): Shape(), radius { radius } {};

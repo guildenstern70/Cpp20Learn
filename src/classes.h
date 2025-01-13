@@ -20,7 +20,7 @@ public:
     // Constructor with member initializer list
     // This is preferable to initialize members
     // in function's body.
-    Box(double length, double width, double height) :
+    Box(const double length, const double width, const double height) :
             length { length }, width { width }, height { height } {};
 
     // Copy constructor: construct box from another box.
@@ -36,7 +36,7 @@ public:
     // Constructor with a single parameter
     // can be called for implicit conversions. To prevent this
     // use 'explicit' keyword
-    explicit Box(double length) :
+    explicit Box(const double length) :
         length { length }
     {
         this->height = 1;

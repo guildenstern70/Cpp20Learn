@@ -6,6 +6,7 @@
 // See LICENSE.
 //
 
+#include <iostream>
 #include "templates.h"
 
 template<typename T>

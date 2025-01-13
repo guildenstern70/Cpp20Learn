@@ -9,10 +9,6 @@
 #ifndef CPP20LEARN_POINTERSREFERENCES_H
 #define CPP20LEARN_POINTERSREFERENCES_H
 
-#include <iostream>
-#include <memory>
-#include "utilities.h"
-
 void pointer_references();
 long normal_pointers();
 

@@ -23,7 +23,7 @@ enum Color {
 class Card
 {
 public:
-    Card(double width, double height):
+    Card(const double width, const double height):
             width { width }, height { height } {};
 
     [[nodiscard]] double getWidth() const { return this->width; }
@@ -40,7 +40,7 @@ protected:
 class ColorCard : public Card
 {
 public:
-    explicit ColorCard(double width, double height, Color color) :
+    explicit ColorCard(const double width, const double height, const Color color) :
         Card(width, height)
     {
         this->color = color;

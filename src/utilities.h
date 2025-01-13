@@ -9,7 +9,6 @@
 #ifndef CPP20LEARN_UTILITIES_H
 #define CPP20LEARN_UTILITIES_H
 
-#include <string>
 #include <iostream>
 
 void print_header(const std::string& header);
