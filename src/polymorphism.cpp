@@ -13,7 +13,7 @@
 
 double Square::get_area() const
 {
-    return (this->side * this->side);
+    return this->side * this->side;
 }
 
 double Circle::get_area() const

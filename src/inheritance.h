@@ -9,8 +9,6 @@
 #ifndef CPP20LEARN_INHERITANCE_H
 #define CPP20LEARN_INHERITANCE_H
 
-#include <iostream>
-
 enum Color {
     Yellow,
     Red,
@@ -49,7 +47,7 @@ public:
     [[nodiscard]] Color getColor() const { return this->color; }
 
 private:
-    Color color = Color::Blue;
+    Color color = Blue;
 };
 
 

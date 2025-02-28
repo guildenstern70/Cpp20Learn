@@ -20,7 +20,7 @@ double random_double()
     std::default_random_engine e1(r());
     constexpr double lower_bound = 5.0;
     constexpr double upper_bound = 20.0;
-    std::uniform_real_distribution<double> uniform_real_distribution(lower_bound,upper_bound);
+    std::uniform_real_distribution uniform_real_distribution(lower_bound,upper_bound);
     return uniform_real_distribution(e1);
 }
 

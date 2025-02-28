@@ -26,9 +26,9 @@ std::ostream& operator<<(std::ostream& os, Color c)
 double test_color_card()
 {
     print_header("      INHERITANCE ");
-    const auto color_card = ColorCard { 10.0, 11.0, Color::Green };
+    const auto color_card = ColorCard { 10.0, 11.0, Green };
     const double w = color_card.getWidth();
     const double h = color_card.getHeight();
     std::cout << color_card.getColor() << " color card [w=" << w << ", h=" << h << "]" << std::endl;
-    return (w+h);
+    return w+h;
 }
