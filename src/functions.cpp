@@ -25,7 +25,7 @@ std::string hello(const std::string& message)
 size_t get_string_len()
 {
     size_t len_of_string = 0;
-    std::string input { "This is a string" };
+    const std::string input { "This is a string" };
     output_parameter(len_of_string, input);
     std::cout << "String length is " << len_of_string << std::endl;
     return len_of_string;

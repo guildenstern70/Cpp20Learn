@@ -37,9 +37,9 @@ void testbox()
     std::cout << "Box 3 volume is " << box_volume( anotherBox ) << std::endl;
 }
 
-double box_volume(double length, double width, double height)
+double box_volume(const double length, const double width, const double height)
 {
-    auto abox = Box::createBox(length, width, height);
+    const auto abox = Box::createBox(length, width, height);
     return abox->volume();
 }
 

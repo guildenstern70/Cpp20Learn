@@ -31,10 +31,10 @@ double sum_vector(const CouplesVector& container)
 double sum_deque(const std::unique_ptr<CouplesDeque>& container)
 {
     double sum = 0.0;
-    for (auto item : *container)
+    for (auto [fst, snd] : *container)
     {
-        std::cout << "Couple #" << item.first << " = " << item.second << std::endl;
-        sum += item.second;
+        std::cout << "Couple #" << fst << " = " << snd << std::endl;
+        sum += snd;
     }
     return sum;
 }
