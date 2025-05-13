@@ -7,6 +7,9 @@
 //
 
 #include <iostream>
+#if __GNUC__
+#include <memory>
+#endif
 #include "pointersreferences.h"
 
 #include "utilities.h"

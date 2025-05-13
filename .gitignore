@@ -1,9 +1,16 @@
+# IDE
 .idea/
 .vscode/
 .vs/
+
+# Makefile
 cmake/
 out/
 cmake-build*
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+Makefile
 
 
 

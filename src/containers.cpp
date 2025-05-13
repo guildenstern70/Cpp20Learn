@@ -10,6 +10,9 @@
 #include "utilities.h"
 #include <vector>
 #include <deque>
+#if __GNUC__
+#include <memory>
+#endif
 #include <iostream>
 
 // Type Alias
