@@ -89,7 +89,7 @@ TEST_CASE("Classes")
     {
         auto abox = Box::createBox(10, 10, 10);
         auto bbox = Box::createBox(12, 12, 12);
-        CHECK(abox < bbox);
+        CHECK(abox->volume() < bbox->volume());
     }
     SUBCASE("Inheritance")
     {
