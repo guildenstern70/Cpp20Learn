@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021-25, Alessio Saltarin
+// Copyright (C) 2021-26, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
@@ -25,7 +25,7 @@ std::string hello(const std::string& message)
 size_t get_string_len()
 {
     size_t len_of_string = 0;
-    const std::string input { "This is a string" };
+    constexpr std::string input { "This is a string" };
     output_parameter(len_of_string, input);
     std::cout << "String length is " << len_of_string << std::endl;
     return len_of_string;

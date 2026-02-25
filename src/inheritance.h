@@ -1,6 +1,6 @@
 //
 // C++ 20 Learn
-// Copyright (C) 2021-25, Alessio Saltarin
+// Copyright (C) 2021-26, Alessio Saltarin
 //
 // This software is licensed under MIT license.
 // See LICENSE.
