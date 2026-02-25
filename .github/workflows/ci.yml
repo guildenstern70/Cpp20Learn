@@ -1,0 +1,83 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    name: ${{ matrix.config.name }}
+    runs-on: ${{ matrix.config.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - {
+              name: "macOS - Clang",
+              os: macos-latest,
+              cc: "clang",
+              cxx: "clang++",
+              build_type: "Release"
+            }
+          - {
+              name: "Linux - GCC",
+              os: ubuntu-latest,
+              cc: "gcc",
+              cxx: "g++",
+              build_type: "Release"
+            }
+          - {
+              name: "Windows - MSVC",
+              os: windows-latest,
+              cc: "cl",
+              cxx: "cl",
+              build_type: "Release"
+            }
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup CMake
+        uses: jwlawson/actions-setup-cmake@v2
+        with:
+          cmake-version: '3.19.x'
+
+      - name: Configure CMake (Unix)
+        if: runner.os != 'Windows'
+        env:
+          CC: ${{ matrix.config.cc }}
+          CXX: ${{ matrix.config.cxx }}
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=${{ matrix.config.build_type }}
+
+      - name: Configure CMake (Windows)
+        if: runner.os == 'Windows'
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=${{ matrix.config.build_type }}
+
+      - name: Build
+        run: cmake --build build --config ${{ matrix.config.build_type }}
+
+      - name: Run Tests (Unix)
+        if: runner.os != 'Windows'
+        working-directory: build
+        run: |
+          ./out/Tests
+
+      - name: Run Tests (Windows)
+        if: runner.os == 'Windows'
+        working-directory: build
+        run: |
+          .\out\${{ matrix.config.build_type }}\Tests.exe
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts-${{ matrix.config.os }}
+          path: |
+            build/out/
+          retention-days: 7
+
